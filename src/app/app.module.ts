@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
-import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.component';
+
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { GraficoDonaComponent } from './components/grafico-dona/grafico-dona.com
     FormsModule,
     BrowserModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

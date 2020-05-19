@@ -16,7 +16,7 @@ export class SettingsService {
   }
 
   guardarAjustes(){
-    console.log('Guardando ajustes en localStorage')
+    // console.log('Guardando ajustes en localStorage')
     localStorage.setItem('ajustes', JSON.stringify( this.ajustes ));
   }
 
@@ -24,9 +24,9 @@ export class SettingsService {
     if( localStorage.getItem('ajustes') ){
       this.ajustes = JSON.parse( localStorage.getItem('ajustes') );
       this.aplicarTema( this.ajustes.tema );
-      console.log('Cargando del localStorage')
+    // console.log('Cargando del localStorage')
     }else{
-      console.log('Valores por default')
+      // console.log('Valores por default')
       this.aplicarTema( this.ajustes.tema );
       this.guardarAjustes();
     }

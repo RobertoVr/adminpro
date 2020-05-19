@@ -19,7 +19,6 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
-
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -45,3 +44,4 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 
 })
 export class PagesModule { }
+

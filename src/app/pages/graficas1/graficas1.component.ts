@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-//charts imports
-import { ChartType } from 'chart.js';
-import { Label, MultiDataSet } from 'ng2-charts';
-
 @Component({
   selector: 'app-graficas1',
   templateUrl: './graficas1.component.html',
@@ -49,14 +45,10 @@ export class Graficas1Component implements OnInit {
 
 
   constructor() {
-    this.iterateObject();
    }
 
   ngOnInit() {
   }
 
-  iterateObject(){
-    console.log(this.graficos.grafico1)
-  }
 
 }

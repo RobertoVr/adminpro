@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common'; 
-import { SettingsService } from '../../services/settings.service';
+import { SettingsService } from '../../services/services.index';
 
 @Component({
   selector: 'app-account-settings',
