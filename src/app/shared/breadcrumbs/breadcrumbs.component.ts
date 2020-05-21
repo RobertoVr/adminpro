@@ -19,14 +19,16 @@ export class BreadcrumbsComponent implements OnInit {
     this.getDataRoute().subscribe(data => {
       this.titulo = data.titulo;
       this.title.setTitle(this.titulo);
+      const metaTag: MetaDefinition = {
+        name : 'description',
+        content: this.titulo
+      };
+      
+      this.meta.updateTag( metaTag );
+      
     })
 
-    const metaTag: MetaDefinition = {
-      name : 'description',
-      content: this.titulo
-    };
     
-    this.meta.updateTag( metaTag );
 
    }
 
